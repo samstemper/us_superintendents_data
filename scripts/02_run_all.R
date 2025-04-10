@@ -41,3 +41,4 @@ all_supers <- bind_rows(supers_list, .id = "state")
 
 # Save combined data
 save(all_supers, file = file.path("data", "processed", "combined_superintendents.Rda"))
+write.csv(all_supers, file = file.path("data", "processed", "combined_superintendents.csv"), row.names = FALSE)
